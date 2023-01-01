@@ -1,4 +1,14 @@
-﻿string[] OutputtingAnArrayWithValuesLessThanTwoCharacters(string[] coll)
+﻿int NumberOfCharactersNotExceedingLength(string[] array)
+{
+    int character = 0;
+    for (int i = 0; i < array.Length; i++)
+    {
+        if(array[i].Length <= characterLength) character++;
+    }
+    return character;
+}
+
+string[] OutputtingAnArrayWithValuesLessThanTwoCharacters(string[] coll)
 {
     int index = 0;
     string[] secondArr = new string[NumberOfCharactersNotExceedingLength(coll)];
